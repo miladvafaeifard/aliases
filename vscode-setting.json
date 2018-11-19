@@ -11,7 +11,17 @@
     "explorer.confirmDragAndDrop": false,
     "team.showWelcomeMessage": false,
     "files.exclude": {
-        "node_modules/": true
+        "**/.idea" : true,       // the folder is special for WebStorm IDE
+        "**/.git": true,         // this is a default value
+        "**/.DS_Store": true,    // this is a default value
+
+        "**/node_modules": true, // this excludes all folders 
+                                 // named "node_modules" from 
+                                 // the explore tree
+        // alternative version
+        "node_modules": true    // this excludes the folder 
+                                // only from the root of
+                                // your workspace 
     },
     "elm.formatCommand": ".\\node_modules\\.bin\\elm-format",
     "gitlens.advanced.messages": {
@@ -29,5 +39,7 @@
             "username": "oauth",
             "token": "system"
         }
-    ]
+    ],
+    "editor.fontFamily": "Fira Code",
+    "editor.fontWeight": "300",
 }
