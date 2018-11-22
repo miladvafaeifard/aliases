@@ -13,6 +13,7 @@ alias gma='git commit --amend $*'
 alias dn='docker network inspect cms-application -f ""{{range $id, $value := .Containers}} {{(index $value).Name}} {{end}}""'
 
 # Display versions list available in the docker hub
+# {dependencies} - jq [ https://stedolan.github.io/jq/ ]
 alias showDockerTags='function getTags() { curl "https://registry.hub.docker.com/v2/repositories/library/$1/tags/" | jq "".\"results\"[][\"name\"]""; }; getTags'
 
 # Maven command to run a Spring Boot application.
