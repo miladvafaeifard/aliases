@@ -27,7 +27,6 @@
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
-    "gitlens.historyExplorer.enabled": true,
     "gitlens.codeLens.enabled": false,
     "materialTheme.autoApplyIcons": true,
     "editor.multiCursorModifier": "ctrlCmd",
@@ -41,5 +40,6 @@
         }
     ],
     "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
     "editor.fontWeight": "300",
 }
